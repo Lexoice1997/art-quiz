@@ -1,0 +1,33 @@
+.start-page .start__navigation {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 170px;
+  margin-bottom: 25px; }
+  .start-page .start__navigation img {
+    width: 415px;
+    height: 415px; }
+  .start-page .start__navigation p {
+    font-size: 36px;
+    color: #660033;
+    text-align: right; }
+.start-page .settings {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  margin: 0 auto;
+  background-color: #660033;
+  width: 0;
+  padding: 1px 100px;
+  color: white;
+  box-shadow: 1px 6px 11px 1px rgba(0, 0, 0, 0.7);
+  border: none;
+  transition: box-shadow .5s ease; }
+  .start-page .settings img {
+    margin-top: 22px;
+    margin-right: 15px; }
+  .start-page .settings p {
+    font-size: 22px;
+    line-height: 26px;
+    margin-left: 5px; }
+
+/*# sourceMappingURL=start-page.css.map */
