@@ -1,0 +1,96 @@
+@import "libs/normalize";
+@import "components/pages/_start-page.scss";
+@import "components/pages/_settings-page.scss";
+@import "components/pages/_categories-page.scss";
+@import "components/pages/quiz-artists.scss";
+
+.filter {
+  filter: grayscale(100%);
+}
+
+.hide {
+  display: none;
+}
+
+body {
+  background: #DCE5EA;
+  color: #660033;
+}
+
+.text {
+  font-size: 28px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  background-color: #660033;
+  border: none;
+  box-sizing: border-box;
+  box-shadow: 1px 6px 11px 1px rgba(0, 0, 0, .7);
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: normal;
+  line-height: 22px;
+  outline: none;
+  position: relative;
+}
+
+.categories {
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.container {
+  max-width: 1064px;
+  margin: 0 auto;
+}
+
+header {
+  padding-top: 20px;
+  div {
+    margin: 0 auto;
+
+    background-image: url("../assets/img/Logo.png");
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 250px;
+    height: 150px;
+  }
+}
+
+main {
+
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  font-size: 24px;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-top: 25px;
+
+  a, div {
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  .bg_rs-school {
+    margin: 0 auto;
+    width: 166px;
+    height: 66px;
+    background-image: url("https://rs.school/images/rs_school_js.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+}

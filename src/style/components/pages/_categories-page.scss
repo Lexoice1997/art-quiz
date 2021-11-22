@@ -1,0 +1,86 @@
+.categories-page {
+
+  &__header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+
+    .btn-home, .btn-score {
+      margin: 0;
+      padding: 16px 60px 12px 80px;
+    }
+
+    .btn-home::before, .btn-score::before {
+      background-image: url("../assets/img/home.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      height: 25px;
+      width: 25px;
+      left: 40px;
+      position: absolute;
+      top: 12px;
+      content: "";
+      display: block;
+    }
+
+    .btn-score::before {
+      background-image: url("../assets/img/score.png");
+    }
+  }
+
+  &__content {
+    gap: 20px;
+
+    &-item {
+      width: 250px;
+      cursor: pointer;
+
+      .item-header {
+        position: relative;
+
+        .item-title {
+          box-sizing: border-box;
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 500;
+          height: 80px;
+          letter-spacing: 1.5px;
+          line-height: 17px;
+          margin: 0;
+          text-transform: uppercase;
+        }
+
+        .item-counter {
+          background-color: #EEF2F4;
+          padding: 40px 10px 5px 20px;
+        }
+
+        .item-total {
+          color: #660033;
+          font-size: 36px;
+          font-style: normal;
+          font-weight: 700;
+          letter-spacing: normal;
+          line-height: 36px;
+          position: absolute;
+          right: 15px;
+          text-align: center;
+          text-transform: uppercase;
+          top: 32px;
+        }
+      }
+
+      .item-picture {
+        background-repeat: no-repeat;
+        overflow: hidden;
+        position: relative;
+      }
+
+      .item-picture__main {
+        background-position: 50%;
+        background-size: cover;
+        height: 250px;
+      }
+    }
+  }
+}

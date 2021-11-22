@@ -1,0 +1,121 @@
+.settings-page {
+  .text-categories {
+    text-align: center;
+  }
+
+  &__content {
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 234px;
+    margin-bottom: 150px;
+  }
+
+  &__items {
+    width: 415px;
+    background-color: #EEF2F4;
+
+    h2 {
+      text-align: center;
+    }
+
+    &-control {
+      margin: 0 auto;
+      width: 100px;
+      height: 82px;
+    }
+
+    .control-volume {
+      background-image: url("../assets/img/volume-on.png");
+      margin-top: 50px;
+    }
+
+    .control-time {
+      background-image: url("../assets/img/timer-picture.png");
+      background-repeat: no-repeat;
+      height: 100px;
+      width: 85px;
+      margin-top: 32px;
+    }
+
+    .volume-wrapper {
+      flex-direction: column;
+      margin-top: 35px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &__control {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+
+        div {
+          margin-left: 10px;
+          font-size: 24px;
+        }
+
+        .volume-label__second {
+          background-image: url("../assets/img/volume-off.png");
+          background-repeat: no-repeat;
+          background-size: cover;
+          cursor: pointer;
+          height: 30px;
+          width: 19px;
+          border: none;
+          outline: none;
+        }
+
+        .progress {
+          border: 1px solid dimgray;
+          border-radius: 5px;
+          cursor: pointer;
+          height: 6px;
+          width: 270px;
+        }
+      }
+    }
+
+    &-on {
+      .check {
+        display: none;
+      }
+      .text {
+        font-size: 18px;
+        margin-top: 15px;
+      }
+      .check:checked+.label {
+        background-image: url("../assets/img/Vector.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+
+      .label {
+        border: 1px solid dimgray;
+        box-sizing: border-box;
+        cursor: pointer;
+        display: block;
+        height: 30px;
+        width: 30px;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+.settings-page__footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 50px;
+  width: 400px;
+  margin: 0 auto;
+
+  div {
+    background-color: #660033;
+    width: 150px;
+    padding: 10px 0;
+    font-size: 22px;
+    text-align: center;
+    color: white;
+  }
+}
